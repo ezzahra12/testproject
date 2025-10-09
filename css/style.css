@@ -11,7 +11,7 @@
 	--bg-color: #fff;
 	--text-color: #221314;
 	--second-color: #5a7184;
-	--main-color: #6e54fa;
+	--main-color: #28053e;
 	--big-font: 6rem;
 	--h2-font: 3rem;
 	--p-font: 1.1rem;
@@ -40,6 +40,10 @@ header{
 	letter-spacing: 1px;
 	color: var(--bg-color);
 }
+.logo img{
+	width: 20%;
+	height: 20%;
+}
 .navbar{
 	display: flex;
 }
@@ -57,6 +61,48 @@ header{
 	box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
 	border-radius: 4px;
 }
+
+.header2 .navbar{
+	display: flex;
+}
+
+.header2{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: transparent;
+	padding: 30px 17%;
+	padding: 30px 17%;
+	transition: ease .40s;
+	color: var(--text-color);
+}
+
+.header2 .logo2{
+	font-size: 35px;
+	font-weight: 600;
+	color: var(--text-color);
+}
+
+.header2 .navbar a{
+	font-size: var(--p-font);
+	font-weight: 500;
+	padding: 10px 22px;
+	border-radius: 4px;
+	transition: ease .40s;
+	color: var(--text-color);
+}
+
+.header2 .navbar a:hover{
+	background: var(--bg-color);
+	color: var(--text-color);
+	box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+	border-radius: 4px;
+}
 #menu-icon{
 	color: var(--bg-color);
 	font-size: 35px;
@@ -65,8 +111,23 @@ header{
 	display: none;
 }
 
+
+
 section{
 	padding: 80px 18%;
+	transition: .2s;
+	
+}
+
+.container1{
+	padding: 80px 18%;
+	margin-top: 80px;
+	transition: .2s;
+}
+.container2{
+	padding: 80px 18%;
+	margin-top: 120px;
+	transition: .2s;
 }
 .home{
 	position: relative;
@@ -85,7 +146,6 @@ section{
 	color: var(--bg-color);
 	font-family: 'Paytone One', sans-serif;
 	letter-spacing: 4px;
-	margin-bottom: 20px;
 }
 .home-text p{
 	color: #ffffffbf;
@@ -113,17 +173,13 @@ header.sticky{
 	box-shadow: rgba(33,35,38, 0.1) 0px 10px 10px -10px;
 }
 .sticky .logo{
-	color: #1f2021;
+	color: var(--text-color);
 }
 .sticky .navbar a{
 	color: var(--text-color);
 } 
-
 .sticky #menu-icon{
-	color: #221314;
-}
-.sticky #menu-icon{
-	color: #221314;
+	color: var(--text-color);
 }
 
 .text h2{
@@ -189,7 +245,7 @@ header.sticky{
 .package-content{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-	grid-gap: 2rem;
+	grid-gap: 40px;
 	align-items: center;
 	margin-top: 5rem;
 }
@@ -301,6 +357,7 @@ header.sticky{
 	align-items: center;
 	justify-content: space-between;
 	grid-gap: 3rem;
+	margin: 220px 0 220px 0;
 }
 .news-text h2{
 	font-size: var(--h2-font);
@@ -342,6 +399,122 @@ header.sticky{
 #contact{
 	background: var(--main-color);
 }
+
+
+
+.contact {
+	margin: 150px;
+  	padding: 10px;
+}
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+.contact button, input, select, textarea {
+  color: var(--text-color);
+  font: inherit;
+  margin: 0;
+}
+
+.contact input {
+  line-height: normal;
+}
+
+.contact textarea {
+  overflow: auto;
+}
+
+#container {
+  border: solid 3px var(--main-color);
+  margin: 0 auto;
+  max-width: 650px;
+  max-height: 650px;
+  position: relative;
+  width: 100%;
+}
+
+form {
+  padding: 45px;
+}
+
+.contact h2 {
+  color: var(--text-color);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+}
+
+
+
+input[type='text'], [type='email'], select, textarea {
+	background: none;
+  border: none;
+	border-bottom: solid 2px var(--main-color);
+	color: var(--text-color);
+	font-size: 1.000em;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+}
+
+.contact textarea {
+	line-height: 150%;
+	height: 150px;
+	resize: none;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+	color: var(--main-color);
+}
+
+#form_button {
+  background: none;
+  border: solid 2px var(--main-color);
+  color: var(--main-color);
+  cursor: pointer;
+  display: inline-block;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.submit {
+  text-align: center;
+}
+
+#form_button:hover {
+  background: var(--main-color);
+  color: #ffffff;
+}
+
 .main{
 	display: flex;
 	flex-wrap: wrap;
@@ -406,6 +579,8 @@ header.sticky{
 	letter-spacing: 2px;
 }
 
+
+
 @media (max-width: 1400px){
 	header{
 		padding: 17px 3%;
@@ -414,6 +589,11 @@ header.sticky{
 	header.sticky{
 		padding: 10px 3%;
 		transition: .2s;
+	}
+
+	
+	.header2 .navbar a{
+		color: var(--text-color);
 	}
 	section{
 		padding: 80px 3%;
@@ -431,11 +611,19 @@ header.sticky{
 	#menu-icon{
 		display: block;
 	}
+
+	
+	.header2 #menu-icon{
+		color: var(--text-color);
+	}
+	
 	.stick #menu-icon{
 		color: var(--text-color);
 	}
+	
 	.home{
-		height: 88vh;
+		height: 100vh;
+		text-align: center;
 	}
 	.navbar{
 		position: absolute;
@@ -457,6 +645,7 @@ header.sticky{
 	.sticky .navbar a{
 		color: var(--bg-color);
 	}
+	
 	.navbar a:hover{
 		color: var(--text-color);
 	}
@@ -470,11 +659,23 @@ header.sticky{
 }
 
 @media (max-width: 575px){
+
+	.container{
+		padding: 20px;
+		margin: 20px;
+	}
+	input, h2 , textarea, button{
+		font-size: 14px;
+		padding: 8px;
+	}
 	.list{
 		width: 100%;
 	}
 	.newsletter form{
 		width: 350px;
+	}
+	.navbar a{
+		color: var(--bg-color);
 	}
 	:root{
 		--big-font: 3.8rem;
@@ -486,48 +687,7 @@ header.sticky{
 	}
 	.home{
 		height: 85vh;
-	
-	
 		transition: .2s;
 	}
-	form{
-		width: 100%;
-	}
-}
-.formulaire{
-	margin: 200px;
-	height: 190px;
-	margin-bottom: 30px;
-	padding-left: 200px;
-	border: radius 1px;
-	border-color: #6e54fa;
-	
-	
-	
-}
-.firstH{
-	margin: 60px;
-	margin-top: 160px;
-	padding-left: 40px;
-	width: 400px;
-
 }
 
-#firstH{
-	color: #1f2021;
-	margin: 100px;
-
-}
- 
-
- .toursBody{
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	font-family: 'Montserrat', sans-serif;
-  font-size:10px;
-	height: 100vh;
-	margin: -20px 0 50px;
-}
