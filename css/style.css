@@ -9,7 +9,7 @@
 }
 :root{
 	--bg-color: #fff;
-	--text-color: #221314;
+	--text-color: #0e0d0d;
 	--second-color: #5a7184;
 	--main-color: #28053e;
 	--big-font: 6rem;
@@ -62,33 +62,18 @@ header{
 	border-radius: 4px;
 }
 
-.header2 .navbar{
+.second-header .navbar{
 	display: flex;
 }
 
-.header2{
-	position: fixed;
-	top: 0;
-	right: 0;
-	width: 100%;
-	z-index: 1000;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	background: transparent;
-	padding: 30px 17%;
-	padding: 30px 17%;
-	transition: ease .40s;
-	color: var(--text-color);
-}
 
-.header2 .logo2{
+.second-header .logo2{
 	font-size: 35px;
 	font-weight: 600;
 	color: var(--text-color);
 }
 
-.header2 .navbar a{
+.second-header .navbar a{
 	font-size: var(--p-font);
 	font-weight: 500;
 	padding: 10px 22px;
@@ -97,7 +82,7 @@ header{
 	color: var(--text-color);
 }
 
-.header2 .navbar a:hover{
+.second-header .navbar a:hover{
 	background: var(--bg-color);
 	color: var(--text-color);
 	box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
@@ -614,9 +599,17 @@ textarea:focus {
 	}
 
 	
-	.header2 .navbar a{
-		color: var(--text-color);
+	.second-header .navbar a{
+		color: var(--bg-color);	
+		
+		
 	}
+	.second-header .navbar {
+		color: var(--bg-color);
+
+		
+	}
+	
 	section{
 		padding: 80px 3%;
 		transition: .2s;
@@ -635,7 +628,7 @@ textarea:focus {
 	}
 
 	
-	.header2 #menu-icon{
+	.second-header #menu-icon{
 		color: var(--text-color);
 	}
 	
@@ -659,10 +652,12 @@ textarea:focus {
 		align-items: center;
 		padding: 150px 30px;
 		transition: 0.5s all;
+		
 	}
 	.navbar a{
 		display: block;
 		margin: 1.2rem 0;
+
 	}
 	.sticky .navbar a{
 		color: var(--bg-color);
@@ -717,11 +712,9 @@ textarea:focus {
   margin-top: 100px;
 }
 
-.contact-body{
-	background: url(/img/download.jpg);
-}
 
-.contact-header .navbar a {
+
+.second-header .navbar a {
   color: var(--text-color);
 }
 
